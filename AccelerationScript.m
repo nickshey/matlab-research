@@ -1,0 +1,16 @@
+x = AccelerationData{:,1};
+y = AccelerationData{:,2};
+y2 = AccelerationData{:,3};
+y3 = AccelerationData{:,4};
+figure;
+plot(x,y,'Color','r');
+hold on;
+plot(x,y2,'Color','g');
+hold on;
+plot(x,y3,'Color','b');
+ax = gca;
+ax.FontSize = 12;
+title('Real-World Acceleration Profile','FontSize',22);
+ylabel('Acceleration (g)', 'FontSize',16);
+xlabel('Time (s)', 'FontSize',16);
+legend('X','Y','Z', 'FontSize', 16);
